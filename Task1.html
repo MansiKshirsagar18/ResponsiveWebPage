@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: lightgray;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .short-dotted-line 
+        {
+                display: inline-block;
+                width: 1000px; 
+                height: 1px; 
+                background-color: #000000;
+                margin: 0 10px;
+                font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1 
+        {
+            background-color: #2c3e50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            
+            text-align: center;
+            padding: 10px;
+        }
+
+        section 
+        {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 
+        {
+            text-align: center;
+        }
+
+        .team-container 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .team-member {
+            flex: 0 0 calc(20% - 20px); 
+            margin: 10px;
+            text-align: center;
+            
+            padding: 10px;
+        }
+        .hd
+        {
+            margin-left: 1200px;
+            padding: 5px 5px;
+            
+        }
+        .flip-container {
+            perspective: 1000px;
+            position: relative;
+            width: 200px;
+            height: 100px;
+        }
+
+        .flip-container:hover .flipper,
+        .flip-container.hover .flipper {
+            transform: rotateY(180deg);
+        }
+
+        .flipper {
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .front,
+        .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .front {
+            background: url('your-image.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:black;
+            font-size: 20px;
+        }
+
+        .back {
+            transform: rotateY(180deg);
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:black;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div  class="hd">
+        <a href="./Task1.html" target="_blank">Home</a>
+        <a href="./Login1.html" target="=blank">Login</a>
+        <a href="./contact.html" target="-blank">About Us</a>
+        <a href="./contact.html" target="-blank">Contact Us</a>
+    </div>
+    <header>
+        <div>
+            <h1 align="short-dotted-line"><caption>Welcome to VeriTEch Solutions</caption></h1>
+            <div  align="center">
+                <p>Welcome to XYZ, where a dedicated team of professionals works together</p>
+                <p>to bring innovation,creaticity and expertise to software industry.getb to know </p>
+                <p>the individuals whi make our company thrive.</p>
+                <span class="short-dotted-line"></span>
+            </div>
+        </div>
+        
+    </header>
+    
+    <section id="meet-our-team">
+        <h2 align="center">Meet Our Team!!</h2>
+        <h2 align="center">Leadership / Management Team</h2>
+        <br><br><br><br> <br><br>
+        <div class="team-container">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="team-member">
+                            <img src="./Images/image1.jpeg">
+                            <p>XYZ<br>Founder/CEO</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        FOUNDER OF THE ORGANISATION
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="team-member">
+                                <img src="./Images/image2.jpeg">
+                                <p>XYZ1<br>ORGANISATION</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            VP OF THE ORGANISATION
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="team-member">
+                                <img src="./Images/image3.jpeg">
+                                <p>XYZ2<br>ORGANISATION</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            CHAIRMEN OF THE ORGANISATION
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="team-member">
+                                <img src="./Images/image4.jpeg">
+                                <p>XYZ3<br>ORGANISATION</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                           KEY PERSON OF THE ORGANISATION
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+      
+        
+    <section id="meet-our-team">
+        
+        <h2 align="center">DEVELOPMENT TEAM</h2>
+        <br><br><br><br>
+        <div class="team-container">
+            
+            <div class="team-member">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="team-member">
+                                <img src="./Images/d1.jpeg">
+                                <p>Developer Team Lead<br>ORGANISATION</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            Developer Team Lead
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="team-member">
+                                <img src="./Images/d2.jpeg">
+                                <p>Developer 1<br>ORGANISATION</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            DEVELOPER 1
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="team-member">
+                                <img src="./Images/d3.jpeg">
+                                <p>Developer 2<br>ORGANISATION</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            DEVELOPER 2
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="team-member">
+                                <img src="./Images/d4.jpeg">
+                                <p>Developer 3<br>ORGANISATION</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            DEVELOPER 3
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+         
+    <section id="meet-our-team">
+           
+            <h2 align="center">SALES / MARKETING TEAM</h2>
+            <br><br><br><br><br><br>
+            <div class="team-container">
+               
+                <div class="team-member">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="team-member">
+                                    <img src="./Images/S1.jpeg">
+                                    <p>SM1<br>ORGANISATION</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                               SALES AND MARKETING1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="team-member">
+                                    <img src="./Images/S2.jpeg">
+                                    <p>SM2<br>ORGANISATION</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                               SALES AND MARKETING2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="team-member">
+                                    <img src="./Images/S3.jpeg">
+                                    <p>SM3<br>ORGANISATION</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                               SALES AND MARKETING3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="team-member">
+                                    <img src="./Images/S4.jpeg">
+                                    <p>SM4<br>ORGANISATION</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                               SALES AND MARKETING4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+               
+            </div>
+            <hr>
+    </section>
+    <section>
+        </div>
+        <footer>
+            <div class="footer">
+                <p> @Copyright &copy; </p>
+                
+            </div>
+        </footer>
+     </section>
+</body>
+</html>
+
